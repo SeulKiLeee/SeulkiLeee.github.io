@@ -30,13 +30,16 @@ $enable-rounded: false;
 
 // general
 body, input, button, select, optgroup, textarea {
-    // font-family: 'Beeunhye';
+    
     // font-family: 'Bujangnim_nunchi';
     font-family:Sen;
 }
 .coding {
     font-family: 'Nanum Gothic Coding', monospace;
    }
+.hangul-two {
+    font-family: 'Beeunhye';
+}
 
 .hangul {
     font-family: 'Bujangnim_nunchi';

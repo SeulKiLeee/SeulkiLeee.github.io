@@ -1,1 +1,1 @@
-Sitemap: /seulkiLeee/sitemap.xml
+Sitemap: /sitemap.xml

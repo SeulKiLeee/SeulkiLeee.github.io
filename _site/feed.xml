@@ -3,11 +3,52 @@
   <channel>
     <title>Seulki's Dev Blog</title>
     <description>Seulki's Dev Blog</description>
-    <link>/seulkiLeee//</link>
-    <atom:link href="/seulkiLeee//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 May 2021 17:22:59 +0900</pubDate>
-    <lastBuildDate>Sat, 22 May 2021 17:22:59 +0900</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 22 May 2021 18:16:11 +0900</pubDate>
+    <lastBuildDate>Sat, 22 May 2021 18:16:11 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>2021년 5월 22일 토요일, 개발 블로그를 다시 시작하다.</title>
+        <description>&lt;p&gt;&amp;lt; 노마드 코더의 풀스택 인스타그램 클론 코딩 &amp;gt;
+인스타그램 백엔드 + 프론트엔드 + 앱 + 서버
+를 배우는 과정.&lt;/p&gt;
+
+&lt;p&gt;노마드코더 홈페이지에 나와있는 강의 정보를 가져왔다.
+https://nomadcoders.co/instaclone&lt;/p&gt;
+
+&lt;p&gt;프로젝트가 끝나고 한숨 돌릴 여유가 생겼으니 이제 열공 해야지-!&lt;/p&gt;
+
+&lt;h4 id=&quot;강의-정보&quot;&gt;강의 정보&lt;/h4&gt;
+
+&lt;p&gt;총 강의수: 232개. 2,119분 (36시간 19분)&lt;/p&gt;
+
+&lt;p&gt;Django 인스타그램 1.0 (2017)
+Prisma 인스타그램 2.0 (2019)
+인스타그램 클론코딩 버전 3.0 (2021)&lt;/p&gt;
+
+&lt;h4 id=&quot;강의-목표&quot;&gt;강의 목표&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;백엔드 + 프론트엔드 + 앱 (ios &amp;amp; 안드로이드) = 걍 몽땅 다 해먹는 강의임
+Expo 로 앱을 만들고. 추가로 React Native CLI 로 설명도 해드릴 예정!
+-노마드코더-
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;spec&quot;&gt;SPEC&lt;/h4&gt;
+
+&lt;p&gt;프론트엔드: Apollo, React, React Hook Form, Styled Components, React Hooks
+백엔드: Apollo Server, GraphQL, Prisma Studio, Prisma Migrate, Prisma Client
+앱: iOS &amp;amp; Android: React Native, Expo, React Native CLI, React Navigation, React Native Web&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 May 2021 00:00:00 +0900</pubDate>
+        <link>/first-note/</link>
+        <guid isPermaLink="true">/first-note/</guid>
+        
+        
+        <category>Diary</category>
+        
+      </item>
     
       <item>
         <title>Les Ambassadeurs, the first Restaurant we Visited in Paris</title>
@@ -26,8 +67,8 @@
 &lt;p&gt;In 2017 Hache opened a smaller restaurant, L’Écrin, within the renovated hotel; the former space of Les Ambassadeurs became a bar.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Feb 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//les-ambassadeurs/</link>
-        <guid isPermaLink="true">/seulkiLeee//les-ambassadeurs/</guid>
+        <link>/les-ambassadeurs/</link>
+        <guid isPermaLink="true">/les-ambassadeurs/</guid>
         
         <category>France</category>
         
@@ -47,8 +88,8 @@
 &lt;p&gt;For several hundred thousand years, the Sahara has alternated between desert and savanna grassland in a 20,000 year cycle caused by the precession of the Earth’s axis as it rotates around the Sun, which changes the location of the North African Monsoon. The area is next expected to become green in about 15,000 years (17,000 AD).&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Feb 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//much-more-than-a-desert-trip-to-sahara/</link>
-        <guid isPermaLink="true">/seulkiLeee//much-more-than-a-desert-trip-to-sahara/</guid>
+        <link>/much-more-than-a-desert-trip-to-sahara/</link>
+        <guid isPermaLink="true">/much-more-than-a-desert-trip-to-sahara/</guid>
         
         
         <category>Travel</category>
@@ -72,8 +113,8 @@
 &lt;p&gt;An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jan 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//one-day-just-started-adventure/</link>
-        <guid isPermaLink="true">/seulkiLeee//one-day-just-started-adventure/</guid>
+        <link>/one-day-just-started-adventure/</link>
+        <guid isPermaLink="true">/one-day-just-started-adventure/</guid>
         
         
         <category>Travel</category>
@@ -97,8 +138,8 @@
 &lt;p&gt;Until 1959, the sentries at Buckingham Palace were stationed outside the fence. This stopped following an incident involving a female tourist and a Coldstream Guardsman – due to the continued pestering by tourists and sightseers, the guardsman kicked the tourist on the ankle as he marched. The tourist made a complaint to the police and the sentry was confined to barracks for ten days. Not long after, the sentries were moved inside the fence.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jan 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//london/</link>
-        <guid isPermaLink="true">/seulkiLeee//london/</guid>
+        <link>/london/</link>
+        <guid isPermaLink="true">/london/</guid>
         
         
         <category>Travel</category>
@@ -125,8 +166,8 @@
 
 </description>
         <pubDate>Sun, 12 Jan 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//external-featured-image/</link>
-        <guid isPermaLink="true">/seulkiLeee//external-featured-image/</guid>
+        <link>/external-featured-image/</link>
+        <guid isPermaLink="true">/external-featured-image/</guid>
         
         <category>France</category>
         
@@ -161,8 +202,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sat, 11 Jan 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//post-with-spoiler/</link>
-        <guid isPermaLink="true">/seulkiLeee//post-with-spoiler/</guid>
+        <link>/post-with-spoiler/</link>
+        <guid isPermaLink="true">/post-with-spoiler/</guid>
         
         <category>Movies</category>
         
@@ -186,8 +227,8 @@
 &lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//that-day-we-almost-missed-flight/</link>
-        <guid isPermaLink="true">/seulkiLeee//that-day-we-almost-missed-flight/</guid>
+        <link>/that-day-we-almost-missed-flight/</link>
+        <guid isPermaLink="true">/that-day-we-almost-missed-flight/</guid>
         
         
         <category>Travel</category>
@@ -217,8 +258,8 @@ rating: 4.5
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//review-oscar/</link>
-        <guid isPermaLink="true">/seulkiLeee//review-oscar/</guid>
+        <link>/review-oscar/</link>
+        <guid isPermaLink="true">/review-oscar/</guid>
         
         <category>Movies</category>
         
@@ -244,33 +285,10 @@ rating: 4.5
 &lt;p&gt;Although some producers have benefited in recent years from rising prices and increased demand for some of the prestige wines from Burgundy and Bordeaux, the French wine industry has seen a decline in domestic consumption and internationally, it has had to compete with many new world wines.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//french-wine/</link>
-        <guid isPermaLink="true">/seulkiLeee//french-wine/</guid>
+        <link>/french-wine/</link>
+        <guid isPermaLink="true">/french-wine/</guid>
         
         <category>France</category>
-        
-        
-        <category>Lifestyle</category>
-        
-      </item>
-    
-      <item>
-        <title>The Observer - National Gallery of Art, Washington, United States</title>
-        <description>&lt;p&gt;The National Gallery of Art, and its attached Sculpture Garden, is a national art museum in Washington, D.C., located on the National Mall, between 3rd and 9th Streets, at Constitution Avenue NW. Open to the public and free of charge, the museum was privately established in 1937 for the American people by a joint resolution of the United States Congress. Andrew W. Mellon donated a substantial art collection and funds for construction.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The core collection includes major works of art donated by Paul Mellon, Ailsa Mellon Bruce, Lessing J. Rosenwald, Samuel Henry Kress, Rush Harrison Kress, Peter Arrell Browne Widener, Joseph E. Widener, and Chester Dale.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The Gallery’s collection of paintings, drawings, prints, photographs, sculpture, medals, and decorative arts traces the development of Western Art from the Middle Ages to the present, including the only painting by Leonardo da Vinci in the Americas and the largest mobile created by Alexander Calder.&lt;/p&gt;
-
-&lt;p&gt;The Gallery’s campus includes the original neoclassical West Building designed by John Russell Pope, which is linked underground to the modern East Building, designed by I. M. Pei, and the 6.1-acre (25,000 m2) Sculpture Garden.&lt;/p&gt;
-
-&lt;p&gt;The Gallery often presents temporary special exhibitions spanning the world and the history of art. It is one of the largest museums in North America.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 Dec 2019 00:00:00 +0900</pubDate>
-        <link>/seulkiLeee//the-observer/</link>
-        <guid isPermaLink="true">/seulkiLeee//the-observer/</guid>
         
         
         <category>Lifestyle</category>
