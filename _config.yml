@@ -4,7 +4,7 @@ title: "Seulki's Dev Blog"
 description: "Seulki's Dev Blog"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /seulkiLeee/
+baseurl: https://seulkileee.github.io
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'gitPage'
 include: ["_pages"]
