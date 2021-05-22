@@ -14,12 +14,37 @@ $enable-rounded: false;
 @import "bootstrap/mixins";
 @import 'bootstrap/bootstrap';
 @import 'stars';
-
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@font-face {
+    font-family: 'Bujangnim_nunchi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_02@1.0/Bujangnim_nunchi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Beeunhye';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Beeunhye.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // general
-body, input, button, select, optgroup, textarea {   
+body, input, button, select, optgroup, textarea {
+    // font-family: 'Beeunhye';
+    // font-family: 'Bujangnim_nunchi';
     font-family:Sen;
 }
+.coding {
+    font-family: 'Nanum Gothic Coding', monospace;
+   }
+
+.hangul {
+    font-family: 'Bujangnim_nunchi';
+    font-size: 22px;
+}
+
+
+
 body {
     line-height:1.7;
     background: #f4f4f4;
