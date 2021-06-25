@@ -41,11 +41,16 @@ var documents = [{
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 8,
+    "url": "/third-note/",
+    "title": "Flutter에서 Social Login 기능 붙이기.",
+    "body": "2021/06/25 - Flutter를 배워보자. : 회사에서 flutter로 새로운 앱 서비스를 준비하고 있다. 나는 재작년부터 ‘EggMorning’ 앱 스터디를 하면서 React Native로 앱 개발을 처음 도전 해봤는데, 그 때는 RN업데이트 마다 라이브러리의 버전 충돌 이슈들을 잡느라 곤욕을 치르며 결국 스터디에서는 flutter로 갈아타기로 결정된 상태였다. 회사에서 AR기능의 앱을 서비스 하고 있는데, wikitude의 SDK를 사용하고 있었다. 그래서 wikitude에서 모바일 플랫폼 용으로 SDK를 지원하는 Flutter를 사용하게 되었다. (RN은 Third-party Plugins지원. ) RN에서도 wikitude를 테스트 해봤지만, 나는 실패했다. ㅋㅋㅋㅋ Flutter에서는 wikitude의 샘플 AR이 정상 작동했다. 야호! 이렇게 feasible test를 통해 새로운 서비스는 Flutter 로 결정!열공해야즵-! wikitude SDK Download Link 정상 작동중인 Wikitude-Flutter Sample App 꺅!! 신난당ㅎ_ㅎ(아이패드로 테스트)"
+    }, {
+    "id": 9,
     "url": "/second-note/",
     "title": "Flutter로 Wikitude AR SDK 테스트 하기 -!",
     "body": "2021/06/22 - Flutter를 배워보자. : 회사에서 flutter로 새로운 앱 서비스를 준비하고 있다. 나는 재작년부터 ‘EggMorning’ 앱 스터디를 하면서 React Native로 앱 개발을 처음 도전 해봤는데, 그 때는 RN업데이트 마다 라이브러리의 버전 충돌 이슈들을 잡느라 곤욕을 치르며 결국 스터디에서는 flutter로 갈아타기로 결정된 상태였다. 회사에서 AR기능의 앱을 서비스 하고 있는데, wikitude의 SDK를 사용하고 있었다. 그래서 wikitude에서 모바일 플랫폼 용으로 SDK를 지원하는 Flutter를 사용하게 되었다. (RN은 Third-party Plugins지원. ) RN에서도 wikitude를 테스트 해봤지만, 나는 실패했다. ㅋㅋㅋㅋ Flutter에서는 wikitude의 샘플 AR이 정상 작동했다. 야호! 이렇게 feasible test를 통해 새로운 서비스는 Flutter 로 결정!열공해야즵-! wikitude SDK Download Link 정상 작동중인 Wikitude-Flutter Sample App 꺅!! 신난당ㅎ_ㅎ(아이패드로 테스트)"
     }, {
-    "id": 9,
+    "id": 10,
     "url": "/first-note/",
     "title": "2021년 5월 22일 토요일, 개발 블로그를 다시 시작하다.",
     "body": "2021/05/21 - &lt; 노마드 코더의 풀스택 인스타그램 클론 코딩 &gt;인스타그램 백엔드 + 프론트엔드 + 앱 + 서버를 배우는 과정. 노마드코더 홈페이지에 나와있는 강의 정보를 가져왔다. https://nomadcoders. co/instaclone 프로젝트가 끝나고 한숨 돌릴 여유가 생겼으니 이제 열공 해야지-! 강의 정보: 총 강의수: 232개. 2,119분 (36시간 19분) Django 인스타그램 1. 0 (2017)Prisma 인스타그램 2. 0 (2019)인스타그램 클론코딩 버전 3. 0 (2021) 강의 목표: 백엔드 + 프론트엔드 + 앱 (ios &amp; 안드로이드) = 걍 몽땅 다 해먹는 강의임Expo 로 앱을 만들고. 추가로 React Native CLI 로 설명도 해드릴 예정!-노마드코더-SPEC: 프론트엔드: Apollo, React, React Hook Form, Styled Components, React Hooks백엔드: Apollo Server, GraphQL, Prisma Studio, Prisma Migrate, Prisma Client앱: iOS &amp; Android: React Native, Expo, React Native CLI, React Navigation, React Native Web "
