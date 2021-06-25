@@ -16,8 +16,8 @@ $enable-rounded: false;
 @import 'stars';
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 @font-face {
-    font-family: 'Bujangnim_nunchi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_02@1.0/Bujangnim_nunchi.woff') format('woff');
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,7 +40,7 @@ body, input, button, select, optgroup, textarea {
     font-family:Sen;
 }
 .coding {
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'NanumSquareRound';
     font-size:16px;
     line-height:1.75em;
    }
