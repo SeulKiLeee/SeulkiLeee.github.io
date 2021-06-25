@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>Flutter로 Wikitude AR SDK 테스트 하기 -! | Seulki's Dev Blog</title>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Flutter로 Wikitude AR SDK 테스트 하기 -! | Seulki’s Dev Blog</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Flutter로 Wikitude AR SDK 테스트 하기 -!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Flutter를 배워보자. 회사에서 flutter로 새로운 앱 서비스를 준비하고 있다. 나는 재작년부터 ‘EggMorning’ 앱 스터디를 하면서 React Native로 앱 개발을 처음 도전 해봤는데, 그 때는 RN업데이트 마다 라이브러리의 버전 충돌 이슈들을 잡느라 곤욕을 치르며 결국 스터디에서는 flutter로 갈아타기로 결정된 상태였다." />
+<meta property="og:description" content="Flutter를 배워보자. 회사에서 flutter로 새로운 앱 서비스를 준비하고 있다. 나는 재작년부터 ‘EggMorning’ 앱 스터디를 하면서 React Native로 앱 개발을 처음 도전 해봤는데, 그 때는 RN업데이트 마다 라이브러리의 버전 충돌 이슈들을 잡느라 곤욕을 치르며 결국 스터디에서는 flutter로 갈아타기로 결정된 상태였다." />
+<meta property="og:site_name" content="Seulki’s Dev Blog" />
+<meta property="og:image" content="/assets/images/wikitudesdk.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-22T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/assets/images/wikitudesdk.png" />
+<meta property="twitter:title" content="Flutter로 Wikitude AR SDK 테스트 하기 -!" />
+<script type="application/ld+json">
+{"headline":"Flutter로 Wikitude AR SDK 테스트 하기 -!","dateModified":"2021-06-22T00:00:00+09:00","datePublished":"2021-06-22T00:00:00+09:00","url":"/second-note/","mainEntityOfPage":{"@type":"WebPage","@id":"/second-note/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"}},"description":"Flutter를 배워보자. 회사에서 flutter로 새로운 앱 서비스를 준비하고 있다. 나는 재작년부터 ‘EggMorning’ 앱 스터디를 하면서 React Native로 앱 개발을 처음 도전 해봤는데, 그 때는 RN업데이트 마다 라이브러리의 버전 충돌 이슈들을 잡느라 곤욕을 치르며 결국 스터디에서는 flutter로 갈아타기로 결정된 상태였다.","@type":"BlogPosting","image":"/assets/images/wikitudesdk.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/assets/css/prism.css" rel="stylesheet">
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Blog Menu</h3>
+        <li><a href="/">Main</a></li>
+        <li><a href="/react">React</a></li>
+        <li><a href="/posts">Posts</a></li>
+        <!-- <li><a href="/contact">Contact</a></li>    -->
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content ">
+
+<div class="container">
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/">
+        <!-- <img src="/assets/images/logo.png" alt="Seulki's Dev Blog"> -->
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <div class="entry-header">
+    <!-- Post Title -->
+    <h1 class="posttitle">Flutter로 Wikitude AR SDK 테스트 하기 -!</h1>
+    <!-- Author & Date  Box -->
+    
+    
+</div>
+
+<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
+
+
+<!-- Featured Image -->
+
+<div class="entry-featured-image">
+    
+    <img class="featured-image " src="/assets/images/wikitudesdk.png" alt="Flutter로 Wikitude AR SDK 테스트 하기 -!">
+    
+</div>
+
+
+<!-- Content -->
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+    <!-- Toc if any -->
+    <div class="hangul" style="font-size: 32px; letter-spacing: 1px;">
+    
+    <!-- End Toc -->
+    <div class="coding">
+    <h4 id="flutter를-배워보자">Flutter를 배워보자.</h4>
+<p>회사에서 flutter로 새로운 앱 서비스를 준비하고 있다. 
+나는 재작년부터 ‘EggMorning’ 앱 스터디를 하면서 React Native로 앱 개발을 처음 도전 해봤는데, 
+그 때는 RN업데이트 마다 라이브러리의 버전 충돌 이슈들을 잡느라 곤욕을 치르며 결국 스터디에서는 flutter로 갈아타기로 결정된 상태였다.</p>
+
+<p>회사에서 AR기능의 앱을 서비스 하고 있는데, wikitude의 SDK를 사용하고 있었다. 
+그래서 wikitude에서 모바일 플랫폼 용으로 SDK를 지원하는 Flutter를 사용하게 되었다. (RN은 Third-party Plugins지원.) 
+RN에서도 wikitude를 테스트 해봤지만, 나는 실패했다.ㅋㅋㅋㅋ Flutter에서는 wikitude의 샘플 AR이 정상 작동했다. 야호!</p>
+
+<p>이렇게 feasible test를 통해 새로운 서비스는 Flutter 로 결정!
+열공해야즵-!</p>
+
+<p><a href="https://www.wikitude.com/download/">wikitude SDK Download Link</a></p>
+
+<p><img src="https://seulkileee.github.io/assets/video/wiki-sample.gif" alt="wikitude-Flutter AR 테스트 영상" /></p>
+<h6 id="정상-작동중인-wikitude-flutter-sample-app-꺅-신난당ㅎ_ㅎ아이패드로-테스트">정상 작동중인 Wikitude-Flutter Sample App 꺅!! 신난당ㅎ_ㅎ(아이패드로 테스트)</h6>
+<hr />
+
+ 
+    </div>
+</div>
+
+<!-- Rating -->
+
+
+<!-- Author Box if enabled from _config.yml -->
+<!-- Author Box -->
+
+
+<!-- Comments if not disabled with comments: false -->
+<!-- Comments
+================================================== -->
+ 
+<div class="comments mt-5">
+    <button class="btn btn-outline-dark py-2 px-5 d-block w-100 show-comments"><i class="fa fa-comments text-muted"></i> &nbsp; Load Comments</button>         
+    <div id="comments">  
+        <h4 class="mb-4">Comments</h4>                 
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'gitPage'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+     
+    <div class="clearfix"></div>              
+    </div>    
+</div>       
+
+
+<!-- Share -->
+<div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Flutter로 Wikitude AR SDK 테스트 하기 -!&url=/second-note/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/second-note/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/second-note/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- Related Post -->
+<!-- Related Posts
+================================================== -->
+<div class=" related-posts ">  
+
+    
+    <h2 class="text-center mb-4 hangul" style="font-size: 30px;">이 글의 태그</h2>
+    
+    
+    <div class="d-flex justify-content-center align-items-center">
+    
+    <!-- Categories -->
+    
+    
+    <a class="smoothscroll badge badge-primary text-capitalize" href="/categories#Flutter">Flutter</a>                
+    
+
+    <!-- Tags -->  
+    
+    
+
+    </div>
+
+    
+    
+    
+    <div class="blog-grid-container">
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        </div>        
+</div>
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+    </div>
+
+    
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+                Copyright © 2021 Seulki's Dev Blog 
+            </div>
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://seulkileee.github.io/" class="hangul">프론트 엔드 개발자의 개발 블로그 입니다.</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+
+<script src="/assets/js/theme.js"></script>
+
+
+
+
+<script id="dsq-count-scr" src="//gitPage.disqus.com/count.js"></script>
+
+
+</body>
+</html>

@@ -27,7 +27,12 @@ $enable-rounded: false;
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 // general
 body, input, button, select, optgroup, textarea {
     
@@ -36,6 +41,8 @@ body, input, button, select, optgroup, textarea {
 }
 .coding {
     font-family: 'Nanum Gothic Coding', monospace;
+    font-size:16px;
+    line-height:1.75em;
    }
 .hangul-two {
     font-family: 'Beeunhye';
@@ -45,8 +52,9 @@ body, input, button, select, optgroup, textarea {
     font-family: 'Bujangnim_nunchi';
     font-size: 22px;
 }
-
-
+.card-title{
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+}
 
 body {
     line-height:1.7;

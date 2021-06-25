@@ -1,14 +1,12 @@
 ---
 layout: post
 title:  "2021년 5월 22일 토요일, 개발 블로그를 다시 시작하다."
-# categories: [ react ]
-tags:  [ React ]
+categories: [ React ]
 image: assets/images/1.png
 beforetoc: "계속 방치만 했던 내 git page를 새롭게 다시 꾸미기로 마음먹고 오랜만에 페이지 세팅을 끝냈다. 노마드 코더의 강의를 들으며 나에게 필요한, 혹은 다른 누군가에게 필요할 수도 있는 정보들로 이곳을 가득 채우고 싶다. "
 toc: true
-# description: "My review of Inception movie. Acting, plot and something else in this short description."
-# rating: 4.5
 ---
+
 < 노마드 코더의 풀스택 인스타그램 클론 코딩 >
 인스타그램 백엔드 + 프론트엔드 + 앱 + 서버
 를 배우는 과정.
