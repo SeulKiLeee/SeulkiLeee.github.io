@@ -6,24 +6,24 @@
 
 <link rel="icon" href="/assets/images/logo.png">
 
-<title>Flutter의 State 정리. | Seulki's Dev Blog</title>
+<title>Flutter+FireBase Google Login 기능 붙이기. | Seulki's Dev Blog</title>
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Flutter의 State 정리. | Seulki’s Dev Blog</title>
+<title>Flutter+FireBase Google Login 기능 붙이기. | Seulki’s Dev Blog</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Flutter의 State 정리." />
+<meta property="og:title" content="Flutter+FireBase Google Login 기능 붙이기." />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="공식 홈페이지를 참고하여 flutter state의 개념에 대해 알아보고 나름대로 정리를 해 놓은 글로 오역 및 잘못된 정보가 있을 수 있습니다 !! 보다 더 정확한 내용은 아래의 링크를 참고하시는게 좋습니다-! (영문) Flutter 공식 홈페이지에 나온 설명" />
-<meta property="og:description" content="공식 홈페이지를 참고하여 flutter state의 개념에 대해 알아보고 나름대로 정리를 해 놓은 글로 오역 및 잘못된 정보가 있을 수 있습니다 !! 보다 더 정확한 내용은 아래의 링크를 참고하시는게 좋습니다-! (영문) Flutter 공식 홈페이지에 나온 설명" />
+<meta name="description" content="Flutter Firebase 소셜 로그인을 위한 기본 셋팅. 플러터에서 firesbase를 이용하여 소셜 로그인을 하려면, firebase 내에서 몇 가지 준비와, flutter에서 기본 세팅들이 필요하다. 이 글은 기본 셋팅이 모두 완료 됐다는 가정하에 작성 한다-! (사실 나도 블로그들을 이것 저것 보며 어떻게 한거라서.. 세세하게 기억나지 않는다..ㅠㅠ)" />
+<meta property="og:description" content="Flutter Firebase 소셜 로그인을 위한 기본 셋팅. 플러터에서 firesbase를 이용하여 소셜 로그인을 하려면, firebase 내에서 몇 가지 준비와, flutter에서 기본 세팅들이 필요하다. 이 글은 기본 셋팅이 모두 완료 됐다는 가정하에 작성 한다-! (사실 나도 블로그들을 이것 저것 보며 어떻게 한거라서.. 세세하게 기억나지 않는다..ㅠㅠ)" />
 <meta property="og:site_name" content="Seulki’s Dev Blog" />
-<meta property="og:image" content="/assets/images/flutter.png" />
+<meta property="og:image" content="/assets/images/wikitudesdk.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-25T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="/assets/images/flutter.png" />
-<meta property="twitter:title" content="Flutter의 State 정리." />
+<meta property="twitter:image" content="/assets/images/wikitudesdk.png" />
+<meta property="twitter:title" content="Flutter+FireBase Google Login 기능 붙이기." />
 <script type="application/ld+json">
-{"headline":"Flutter의 State 정리.","dateModified":"2021-06-25T00:00:00+09:00","datePublished":"2021-06-25T00:00:00+09:00","url":"/third-note/","mainEntityOfPage":{"@type":"WebPage","@id":"/third-note/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"}},"description":"공식 홈페이지를 참고하여 flutter state의 개념에 대해 알아보고 나름대로 정리를 해 놓은 글로 오역 및 잘못된 정보가 있을 수 있습니다 !! 보다 더 정확한 내용은 아래의 링크를 참고하시는게 좋습니다-! (영문) Flutter 공식 홈페이지에 나온 설명","@type":"BlogPosting","image":"/assets/images/flutter.png","@context":"https://schema.org"}</script>
+{"headline":"Flutter+FireBase Google Login 기능 붙이기.","dateModified":"2021-06-25T00:00:00+09:00","datePublished":"2021-06-25T00:00:00+09:00","url":"/third-note-copy/","mainEntityOfPage":{"@type":"WebPage","@id":"/third-note-copy/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"}},"description":"Flutter Firebase 소셜 로그인을 위한 기본 셋팅. 플러터에서 firesbase를 이용하여 소셜 로그인을 하려면, firebase 내에서 몇 가지 준비와, flutter에서 기본 세팅들이 필요하다. 이 글은 기본 셋팅이 모두 완료 됐다는 가정하에 작성 한다-! (사실 나도 블로그들을 이것 저것 보며 어떻게 한거라서.. 세세하게 기억나지 않는다..ㅠㅠ)","@type":"BlogPosting","image":"/assets/images/wikitudesdk.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -110,7 +110,7 @@
     <div class="main-content">
         <div class="entry-header">
     <!-- Post Title -->
-    <h1 class="posttitle">Flutter의 State 정리.</h1>
+    <h1 class="posttitle">Flutter+FireBase Google Login 기능 붙이기.</h1>
     <!-- Author & Date  Box -->
     
     
@@ -123,7 +123,7 @@
 
 <div class="entry-featured-image">
     
-    <img class="featured-image " src="/assets/images/flutter.png" alt="Flutter의 State 정리.">
+    <img class="featured-image " src="/assets/images/wikitudesdk.png" alt="Flutter+FireBase Google Login 기능 붙이기.">
     
 </div>
 
@@ -136,52 +136,38 @@
     <div class="hangul" style="font-size: 32px; letter-spacing: 1px;">
     
     
-        <p><em>Flutter의 상태 관리에 대해 알아보기. with 공홈</em></p>
+        <p><em>Flutter를 이용한 앱 개발 / FireBase를 이용한 Google Login 기능을 앱에 추가해 보자.</em></p>
     
     </div>
     <div class="toc mt-4 mb-4 lead">
         <h3 class="font-weight-bold">Summary</h3>
         <ul>
-  <li><a href="#공식-홈페이지를-참고하여-flutter-state의-개념에-대해-알아보고-나름대로-정리를-해-놓은-글로-오역-및-잘못된-정보가-있을-수-있습니다-">공식 홈페이지를 참고하여 flutter state의 개념에 대해 알아보고 나름대로 정리를 해 놓은 글로 오역 및 잘못된 정보가 있을 수 있습니다 !!</a></li>
+  <li><a href="#flutter-firebase-소셜-로그인을-위한-기본-셋팅">Flutter Firebase 소셜 로그인을 위한 기본 셋팅.</a></li>
+  <li><a href="#프로젝드-개발-환경">프로젝드 개발 환경</a></li>
+  <li><a href="#flutterfire-google_sign_in">FlutterFire (google_sign_in)</a></li>
 </ul>
     </div>
     
     <!-- End Toc -->
     <div class="coding">
-    <h6 id="공식-홈페이지를-참고하여-flutter-state의-개념에-대해-알아보고-나름대로-정리를-해-놓은-글로-오역-및-잘못된-정보가-있을-수-있습니다-">공식 홈페이지를 참고하여 flutter state의 개념에 대해 알아보고 나름대로 정리를 해 놓은 글로 오역 및 잘못된 정보가 있을 수 있습니다 !!</h6>
-<p>보다 더 정확한 내용은 아래의 링크를 참고하시는게 좋습니다-! (영문)
-<a href="https://flutter-ko.dev/docs/development/data-and-backend/state-mgmt/intro">Flutter 공식 홈페이지에 나온 설명</a></p>
+    <h4 id="flutter-firebase-소셜-로그인을-위한-기본-셋팅">Flutter Firebase 소셜 로그인을 위한 기본 셋팅.</h4>
+<p>플러터에서 firesbase를 이용하여 소셜 로그인을 하려면, firebase 내에서 몇 가지 준비와,
+flutter에서 기본 세팅들이 필요하다. 이 글은 기본 셋팅이 모두 완료 됐다는 가정하에 작성 한다-!
+(사실 나도 블로그들을 이것 저것 보며 어떻게 한거라서.. 세세하게 기억나지 않는다..ㅠㅠ)</p>
 
-<h4 id="ephemeral-state--단일-위젯-상태-">Ephemeral state ( 단일 위젯 상태 )</h4>
-<p>UI state, Local state등 으로도 불리는 사용후 삭제되는 상태.</p>
+<h4 id="프로젝드-개발-환경">프로젝드 개발 환경</h4>
+<p>우선 우리 회사의 프로젝트는
+GCP 이용중 ( Node.js, Express ),
+Firebase 이용중 (Core, Authentication, Storage)
+그리고 DB는 Mysql을 이용중 -!</p>
 
-<p>공홈에 나온 예시들 )</p>
-<ul>
-  <li>PageView 안의 현재 페이지.</li>
-  <li>복잡한 애니메이션의 현재 진행 상황.</li>
-  <li>BottomNavigationBar 안의 현재 선택된 탭.</li>
-</ul>
+<p>구글 로그인은 firebase에서 지원하는 소셜 로그인이기 때문에 순조롭게(?) 구현할 수 있었다.</p>
 
-<p>단순한 방법으로 변경되며, 위젯 트리의 다른 부분에서 해당 상태에 엑세스 할 필요가 없는 상태에 사용.
-상태 관리(Redux, getX 등)를 사용할 필요없이, Stateful Widget만을 사용해도 충분할 때.
-++나의 생각) api, data 등 서버 통신이 필요 없을 때. 한 페이지(route) 안에서 끝나는 작업들에 적합한 것으로 예상된다.</p>
+<h4 id="flutterfire-google_sign_in">FlutterFire (google_sign_in)</h4>
 
-<h4 id="app-state--공유-상태-">App State ( 공유 상태 )</h4>
-<p>사용 후 삭제 되지않고, App 내의 여러 곳에서 공유되며, 사용자 세션 유지등에 필요한 상태.</p>
-
-<p>공홈에 나온 예시들)</p>
-<ul>
-  <li>사용자 기본 설정</li>
-  <li>로그인 정보</li>
-  <li>SNS앱에서 알림</li>
-  <li>E-커머스 앱에서 장바구니</li>
-  <li>신문앱의 기사나, 게시글의 읽음/읽지 않음 상태.</li>
-</ul>
-
-<p>여러 곳에서 전역적으로 사용되는 상태. 앱에 로그인한 사용자의 정보 또는 로그인 정보등이 대표적이다.
-++나의 생각) 단순히 화면UI가 바뀌는 상태가 아니라, api, data등 서버 통신이 필요할 때 쓰일 것으로 예상된다.
-나는 App State를 서비스의 DB 테이블을 참고하여 구조를 짤 계획이다. App State Management Tool 로 getX를 사용할 것이다. 
-<a href="https://github.com/jonataslaw/getx/blob/master/README.ko-kr.md">getX 한국어 버전 설명</a></p>
+<p>나는 FlutterFire 문서를 보고 google_sign_in 을 사용하여 구글 로그인을 구현했다.
+<a href="https://firebase.flutter.dev/docs/auth/social/">FlutterFire의 소셜 Auth 링크</a>
+플러터를 이용해서 구글 로그인을 보다 쉽게 도와주는 툴 인것 같다.</p>
 
 <hr />
 
@@ -231,19 +217,19 @@
     </p>
     <ul>
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=Flutter의 State 정리.&url=/third-note/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Flutter+FireBase Google Login 기능 붙이기.&url=/third-note-copy/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fab fa-twitter"></i>
             </a>
         </li>
 
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u=/third-note/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/third-note-copy/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </li>
 
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/third-note/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/third-note-copy/" onclick="window.open(this.href, 'width=550,height=435');return false;">
                 <i class="fab fa-linkedin-in"></i>
             </a>
         </li>
@@ -287,26 +273,17 @@
             
         
             
-        
-        
-        
-            
-            
-        
-            
-        
-            
             <!-- begin post -->
 
 
 <div class="blog-grid-item">
     <div class="card h-100">
         <div class="maxthumb">
-            <a href="/third-note-copy/">
+            <a href="/third-note/">
                 
 
                     
-                        <img class="img-thumb" src="/assets/images/wikitudesdk.png" alt="Flutter+FireBase Google Login 기능 붙이기."> 
+                        <img class="img-thumb" src="/assets/images/flutter.png" alt="Flutter의 State 정리."> 
                     
 
                 
@@ -314,10 +291,10 @@
         </div>
         <div class="card-body">
             <h2 class="card-title">
-                <a class="text-dark" href="/third-note-copy/">Flutter+FireBase Google Login 기능 붙이기.</a>
+                <a class="text-dark" href="/third-note/">Flutter의 State 정리.</a>
                 
             </h2>
-            <h4 class="card-text">Flutter Firebase 소셜 로그인을 위한 기본 셋팅. 플러터에서 firesbase를 이용하여 소셜 로그인을 하려면, firebase 내에서 몇 가지 준비와, flutter에서 기본 세팅들이 필요하다. 이 글은 기본 셋팅이 모두 완료 됐다는 가정하에...</h4>
+            <h4 class="card-text">공식 홈페이지를 참고하여 flutter state의 개념에 대해 알아보고 나름대로 정리를 해 놓은 글로 오역 및 잘못된 정보가 있을 수 있습니다 !! 보다 더 정확한 내용은 아래의 링크를 참고하시는게 좋습니다-! (영문)...</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
@@ -332,6 +309,15 @@
 <!-- end post -->
             
             
+            
+        
+        
+        
+            
+            
+        
+            
+        
             
         
         
